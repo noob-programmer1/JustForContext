@@ -31,5 +31,9 @@ Package.resolved
 # Archives
 *.xcarchive
 
+# Builds & DMGs
+build/
+*.dmg
+
 # Claude
 .claude/

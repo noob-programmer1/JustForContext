@@ -18,6 +18,12 @@
   <a href="https://buymeacoffee.com/noob_programmer"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow?style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"/></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/noob-programmer1/JustForContext/releases/latest"><b>Download DMG</b></a>
+  &nbsp;·&nbsp;
+  macOS 14+ &nbsp;·&nbsp; Apple Silicon & Intel
+</p>
+
 ---
 
 A native macOS menubar app that saves, switches, and restores your entire developer context — open IDEs, terminal sessions, browser tabs, window positions, git branches, and **Claude Code sessions** — in one click.
