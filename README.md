@@ -46,6 +46,27 @@ Think of it as `Cmd+Tab` for your brain. Stop losing 15 minutes re-opening every
 
 ---
 
+## Install
+
+### Download (recommended)
+
+1. Download the latest `.dmg` from the [Releases page](https://github.com/noob-programmer1/JustForContext/releases/latest)
+2. Open the DMG and drag **JustForContext.app** into **Applications**
+3. Launch from Applications
+
+> **First launch:** The app is not notarized yet (no Apple Developer account). macOS will block it by default. To open:
+> - Right-click the app → **Open** → **Open**
+> - Or go to **System Settings → Privacy & Security** and click **Open Anyway**
+> - You only need to do this once
+
+### Permissions
+
+On first launch, the app may request:
+- **Accessibility** — capture and restore window positions
+- **Automation** — detect open Xcode projects and browser tabs via AppleScript
+
+---
+
 ## Features
 
 ### Workspace Context Capture
@@ -157,12 +178,6 @@ If you modify `project.yml` or add/remove source files:
 brew install xcodegen
 xcodegen generate
 ```
-
-### Permissions
-
-On first launch, the app may request:
-- **Accessibility** — needed to capture and restore window positions
-- **Automation** — needed to detect open Xcode projects and browser tabs via AppleScript
 
 ---
 
