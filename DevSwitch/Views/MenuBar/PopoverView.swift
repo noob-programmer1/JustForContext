@@ -185,15 +185,31 @@ struct PopoverView: View {
 
             Spacer()
 
-            Button { NSApplication.shared.terminate(nil) } label: {
-                Image(systemName: "power")
-                    .font(.system(size: 10))
-                    .frame(width: 22, height: 22)
-                    .contentShape(Rectangle())
+            HStack(spacing: 2) {
+                Button {
+                    if let url = URL(string: "https://buymeacoffee.com/noob_programmer") {
+                        NSWorkspace.shared.open(url)
+                    }
+                } label: {
+                    Image(systemName: "cup.and.saucer.fill")
+                        .font(.system(size: 10))
+                        .frame(width: 22, height: 22)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(.orange)
+                .help("Buy me a coffee")
+
+                Button { NSApplication.shared.terminate(nil) } label: {
+                    Image(systemName: "power")
+                        .font(.system(size: 10))
+                        .frame(width: 22, height: 22)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(.tertiary)
+                .help("Quit JustForContext")
             }
-            .buttonStyle(.plain)
-            .foregroundStyle(.tertiary)
-            .help("Quit DevSwitch")
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 7)

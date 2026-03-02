@@ -1,8 +1,10 @@
-<p align="center">
-  <img src="https://img.icons8.com/sf-symbols-filled/96/rectangle.stack.fill.png" width="80" alt="JustForContext icon"/>
-</p>
-
-<h1 align="center">JustForContext</h1>
+<h1 align="center">
+  <br/>
+  <img src="assets/icon.png" width="80" alt="JustForContext icon"/>
+  <br/>
+  JustForContext
+  <br/>
+</h1>
 
 <p align="center">
   <em>"Just for everyone's context..."</em> — every PM, every standup, every time.
@@ -21,6 +23,18 @@
 A native macOS menubar app that saves, switches, and restores your entire developer context — open IDEs, terminal sessions, browser tabs, window positions, git branches, and **Claude Code sessions** — in one click.
 
 Think of it as `Cmd+Tab` for your brain. Stop losing 15 minutes re-opening everything when you switch between projects.
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="assets/screenshot-popover.png" width="340" alt="Menubar popover with workspaces and Claude sessions"/>
+  &nbsp;&nbsp;
+  <img src="assets/screenshot-expanded.png" width="340" alt="Expanded workspace showing IDEs, sessions, and apps"/>
+</p>
+
+> **Note:** Screenshots coming soon — this is an early alpha. Want to help? Take a screenshot and open a PR!
 
 ---
 

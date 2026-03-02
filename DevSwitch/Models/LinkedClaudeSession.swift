@@ -5,13 +5,13 @@ struct LinkedClaudeSession: Identifiable, Codable, Sendable {
     let id: String                      // JSONL filename (session UUID)
     let sessionId: String?              // sessionId from JSONL records
     let projectPath: String             // URL-encoded project directory name
-    var cwd: String?                    // Actual working directory from JSONL (reliable)
-    var projectName: String
-    var model: String?
-    var lastActivityTime: Date
-    var isActive: Bool
-    var totalTokens: Int
-    var totalCost: Double
+    let cwd: String?                    // Actual working directory from JSONL (reliable)
+    let projectName: String
+    let model: String?
+    let lastActivityTime: Date
+    let isActive: Bool
+    let totalTokens: Int
+    let totalCost: Double
     var summary: String?                // User-editable label like "OAuth login flow"
 
     init(

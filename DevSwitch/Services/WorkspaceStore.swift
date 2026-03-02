@@ -3,7 +3,7 @@ import Foundation
 /// CRUD persistence for workspaces and snapshots using JSON files.
 @MainActor @Observable
 final class WorkspaceStore {
-    var workspaces: [Workspace] = []
+    private(set) var workspaces: [Workspace] = []
     private(set) var snapshots: [UUID: WorkspaceSnapshot] = [:]
 
     private let workspacesURL: URL
@@ -49,6 +49,12 @@ final class WorkspaceStore {
 
     var activeWorkspace: Workspace? {
         workspaces.first(where: \.isActive)
+    }
+
+    /// Update branch for a workspace by index — used during refresh.
+    func setBranch(_ branch: String, at index: Int) {
+        guard workspaces.indices.contains(index) else { return }
+        workspaces[index].gitBranch = branch
     }
 
     // MARK: - Snapshots

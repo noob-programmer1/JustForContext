@@ -4,10 +4,10 @@ import Foundation
 struct WorkspaceSnapshot: Codable, Sendable {
     let workspaceId: UUID
     let capturedAt: Date
-    var windowStates: [WindowState]
-    var browserTabs: [BrowserTab]
-    var terminalTabs: [TerminalTab]
-    var ideStates: [IDEState]
+    private(set) var windowStates: [WindowState]
+    private(set) var browserTabs: [BrowserTab]
+    private(set) var terminalTabs: [TerminalTab]
+    private(set) var ideStates: [IDEState]
 
     init(
         workspaceId: UUID,

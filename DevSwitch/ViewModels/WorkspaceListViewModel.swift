@@ -3,14 +3,14 @@ import SwiftUI
 /// ViewModel for the workspace list — used in both menubar popover and main window sidebar.
 @MainActor @Observable
 final class WorkspaceListViewModel {
-    let store = WorkspaceStore()
-    let sessionService = ClaudeSessionService()
+    private(set) var store = WorkspaceStore()
+    private(set) var sessionService = ClaudeSessionService()
 
     var searchText = ""
     var showSaveContextSheet = false
     var selectedWorkspaceId: UUID?
-    var isSwitching = false
-    var lastSwitchResult: ContextSwitcher.SwitchResult?
+    private(set) var isSwitching = false
+    private(set) var lastSwitchResult: ContextSwitcher.SwitchResult?
 
     var filteredWorkspaces: [Workspace] {
         if searchText.isEmpty {
@@ -104,7 +104,7 @@ final class WorkspaceListViewModel {
         for i in store.workspaces.indices {
             if store.workspaces[i].gitBranch == nil || store.workspaces[i].gitBranch?.isEmpty == true {
                 if let branch = GitService.currentBranch(at: store.workspaces[i].projectPath) {
-                    store.workspaces[i].gitBranch = branch
+                    store.setBranch(branch, at: i)
                 }
             }
         }
