@@ -30,7 +30,7 @@ A native macOS menubar app that saves, switches, and restores your entire develo
 
 Think of it as `Cmd+Tab` for your brain. Stop losing 15 minutes re-opening everything when you switch between projects.
 
-> **Warning**
+> [!WARNING]
 > This project is in **early alpha** and very much a work in progress. Things may break, features may be incomplete, and there will be rough edges. Bug reports and contributions are welcome!
 
 ---
