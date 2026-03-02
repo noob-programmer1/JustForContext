@@ -28,13 +28,15 @@ Think of it as `Cmd+Tab` for your brain. Stop losing 15 minutes re-opening every
 
 ## Screenshots
 
-<p align="center">
-  <img src="assets/screenshot-popover.png" width="340" alt="Menubar popover with workspaces and Claude sessions"/>
-  &nbsp;&nbsp;
-  <img src="assets/screenshot-expanded.png" width="340" alt="Expanded workspace showing IDEs, sessions, and apps"/>
-</p>
+| Popover | Expanded Workspace |
+|:---:|:---:|
+| <img src="assets/screenshot-popover.png" width="300" alt="Menubar popover"/> | <img src="assets/screenshot-expanded.png" width="300" alt="Expanded workspace"/> |
+| Workspaces + recent Claude sessions | IDEs, Claude sessions, and captured apps |
 
-> **Note:** Screenshots coming soon — this is an early alpha. Want to help? Take a screenshot and open a PR!
+| Save Context | Main Window |
+|:---:|:---:|
+| <img src="assets/screenshot-save-context.png" width="300" alt="Save context form"/> | <img src="assets/screenshot-main-window.png" width="480" alt="Main window"/> |
+| Inline workspace creation with session linking | Full workspace detail with context snapshot |
 
 ---
 
