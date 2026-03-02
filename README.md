@@ -57,7 +57,8 @@ Think of it as `Cmd+Tab` for your brain. Stop losing 15 minutes re-opening every
 2. Open the DMG and drag **JustForContext.app** into **Applications**
 3. Launch from Applications
 
-> **First launch:** The app is not notarized yet (no Apple Developer account). macOS will block it by default. To open:
+> [!NOTE]
+> The app is **not notarized** yet (no Apple Developer account), so macOS will block it on first launch. To bypass:
 > - Right-click the app → **Open** → **Open**
 > - Or go to **System Settings → Privacy & Security** and click **Open Anyway**
 > - You only need to do this once
